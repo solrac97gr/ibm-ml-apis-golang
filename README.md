@@ -12,7 +12,7 @@ Completar el .ENV como en el archivo de ejemplo con las credenciales que les pro
 
 # Services Integrated
 
-  - Personality Insigths
+  - Personality Insights
   - Natural Lenguage Classifier
   - Natural Lenguage Understanding
   - Discovery
