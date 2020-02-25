@@ -10,8 +10,8 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/solrac97gr/ibm-cloud-course/discovery"
-	natural "github.com/solrac97gr/ibm-cloud-course/naturallenguajeclassifier"
-	naturalu "github.com/solrac97gr/ibm-cloud-course/naturallenguajeunderstanding"
+	natural "github.com/solrac97gr/ibm-cloud-course/naturallenguageclassifier"
+	naturalu "github.com/solrac97gr/ibm-cloud-course/naturallenguageunderstanding"
 	personality "github.com/solrac97gr/ibm-cloud-course/personalityInsights"
 )
 
