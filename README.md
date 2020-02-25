@@ -1,3 +1,5 @@
+<p align="center"><img src="https://carlosgrowth.com/_nuxt/img/06308a4.svg" width=200/></p>
+
 # IBM Cloud ML - Golang Implement
 
 Develop this project to have an example of how to connect the machine learning Apis of watson studio using golang as a language.
