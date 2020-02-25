@@ -9,7 +9,7 @@ import (
 	"github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
 )
 
-func Natural() {
+func Natural(text string) {
 
 	authenticator := &core.IamAuthenticator{
 		ApiKey: os.Getenv("NLC_API_KEY"),
@@ -30,7 +30,7 @@ func Natural() {
 	result, _, responseErr := naturalLanguageClassifier.Classify(
 		&naturallanguageclassifierv1.ClassifyOptions{
 			ClassifierID: core.StringPtr(os.Getenv("NLC_MODEL_ID")),
-			Text:         core.StringPtr("Como estas?"),
+			Text:         core.StringPtr(text),
 		},
 	)
 	if responseErr != nil {
