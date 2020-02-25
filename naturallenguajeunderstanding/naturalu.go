@@ -31,8 +31,10 @@ func Naturalu(urls string) {
 
 	result, _, responseErr := naturalLanguageUnderstanding.Analyze(
 		&naturallanguageunderstandingv1.AnalyzeOptions{
+			// You can pass URL,TEXT,HTML
 			URL: &url,
 			Features: &naturallanguageunderstandingv1.Features{
+				// You can edit all freatures for more customization or you can delete some Features if you dont need
 				Categories:    &naturallanguageunderstandingv1.CategoriesOptions{},
 				Concepts:      &naturallanguageunderstandingv1.ConceptsOptions{},
 				Emotion:       &naturallanguageunderstandingv1.EmotionOptions{},

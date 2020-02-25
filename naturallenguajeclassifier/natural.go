@@ -10,7 +10,7 @@ import (
 )
 
 func Natural(text string) {
-
+	//You need create a traing classifier for this function
 	authenticator := &core.IamAuthenticator{
 		ApiKey: os.Getenv("NLC_API_KEY"),
 	}
@@ -29,6 +29,7 @@ func Natural(text string) {
 
 	result, _, responseErr := naturalLanguageClassifier.Classify(
 		&naturallanguageclassifierv1.ClassifyOptions{
+			//The clasifier ID is in the NLC interface in the description of the clasifier IMPORTNT: Ready and training model only
 			ClassifierID: core.StringPtr(os.Getenv("NLC_MODEL_ID")),
 			Text:         core.StringPtr(text),
 		},
