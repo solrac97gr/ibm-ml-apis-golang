@@ -3,19 +3,14 @@ package natural
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/IBM/go-sdk-core/core"
-	"github.com/joho/godotenv"
 	"github.com/watson-developer-cloud/go-sdk/naturallanguageclassifierv1"
 )
 
 func Natural() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+
 	authenticator := &core.IamAuthenticator{
 		ApiKey: os.Getenv("NLC_API_KEY"),
 	}

@@ -4,19 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 
 	"github.com/IBM/go-sdk-core/core"
-	"github.com/joho/godotenv"
 	"github.com/watson-developer-cloud/go-sdk/personalityinsightsv3"
 )
 
 func Personality() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
 	authenticator := &core.IamAuthenticator{
 
 		ApiKey: os.Getenv("PI_API_KEY"),
