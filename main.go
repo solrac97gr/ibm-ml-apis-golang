@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/joho/godotenv"
-	"github.com/solrac97gr/ibm-cloud-course/discovery"
-	natural "github.com/solrac97gr/ibm-cloud-course/naturallenguageclassifier"
-	naturalu "github.com/solrac97gr/ibm-cloud-course/naturallenguageunderstanding"
-	personality "github.com/solrac97gr/ibm-cloud-course/personalityInsights"
+	"github.com/solrac97gr/ibm-cloud-sdk/discovery"
+	natural "github.com/solrac97gr/ibm-cloud-sdk/naturallenguageclassifier"
+	naturalu "github.com/solrac97gr/ibm-cloud-sdk/naturallenguageunderstanding"
+	personality "github.com/solrac97gr/ibm-cloud-sdk/personalityInsights"
 )
 
 func main() {
